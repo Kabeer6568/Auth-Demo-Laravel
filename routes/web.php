@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('auth' , [AuthController::class, 'create'])->name('auth.create');
 Route::post('auth' , [AuthController::class, 'register'])->name('auth.register');
